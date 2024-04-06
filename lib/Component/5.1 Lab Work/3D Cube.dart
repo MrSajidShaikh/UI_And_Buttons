@@ -1,4 +1,3 @@
-import 'package:button/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
