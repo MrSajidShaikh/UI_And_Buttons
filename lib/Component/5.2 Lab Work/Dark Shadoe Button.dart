@@ -6,38 +6,41 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: blackColor,
         appBar: AppBar(
-          backgroundColor: Colors.teal,
+          backgroundColor: redColor,
           centerTitle: true,
           title: const Text(
-            'A Shadow Button',
-            style: TextStyle(color: Colors.white,
+            'Dark Shadow Button',
+            style: TextStyle(
+                color: Colors.white,
                 fontWeight: FontWeight.w500
             ),
           ),
         ),
         body: Center(
           child: Container(
-            height: 80,
-            width: 200,
+            height: 60,
+            width: 250,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Colors.black,
               shape: BoxShape.rectangle,
               boxShadow: [
-                BoxShadow(spreadRadius: 2,
-                    color: lightTealColor,
-                    blurRadius: 7
+                BoxShadow(
+                    spreadRadius: 2,
+                    color: redColor,
+                    blurRadius: 15
                 ),
               ],
-              borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(20),
             ),
             child: const Text(
               'Tap',
               style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w700,
-                  fontSize: 30),
+                  color: Colors.white,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 22),
             ),
           ),
         ),
