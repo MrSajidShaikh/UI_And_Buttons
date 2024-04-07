@@ -1,4 +1,4 @@
-<h1 align="center"> 🔸 Mix Up UI 🔸 </h1>
+<h1 align="center"> 🔸 UI 🔸 </h1>
 
 <h3 align="center"> 4. Mashal </h3>
 
