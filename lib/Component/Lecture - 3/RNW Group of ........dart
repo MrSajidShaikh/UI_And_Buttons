@@ -27,10 +27,6 @@ class MyApp extends StatelessWidget {
           actions: const [
             Padding(
               padding: EdgeInsets.only(right: 20),
-              child: Icon(
-                Icons.notification_important,
-                color: Colors.white,
-              ),
             ),
           ],
           backgroundColor: Colors.redAccent,
