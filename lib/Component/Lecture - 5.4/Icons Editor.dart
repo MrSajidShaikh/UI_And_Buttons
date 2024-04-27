@@ -1,6 +1,7 @@
 
-import 'package:button/utils/Icons.dart';
 import 'package:flutter/material.dart';
+
+import '../../utils/Icons.dart';
 
 void main() {
   runApp(IconEditor());
