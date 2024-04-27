@@ -1,12 +1,12 @@
+import 'package:button/Component/Counter.dart';
 import 'package:flutter/material.dart';
-import 'Component/5.5 Lab Work/Wall UDF.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class bolt extends StatelessWidget {
+  const bolt ({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,29 +29,40 @@ class _homePageState extends State<homePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xffFFC107),
         appBar: AppBar(
           backgroundColor: const Color(0xff212121),
           centerTitle: true,
           title: const Text(
-            'THE WALL',
+            'BOLT',
             style: TextStyle(
               color: Colors.white,
+              letterSpacing: 17,
               fontSize: 28,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w300,
             ),
           ),
         ),
-        body: Column(
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row1(),
-            Row2(),
-            Row1(),
-            Row2(),
-            Row1(),
-            Row2(),
-            Row1(),
-            Row2(),
+            Column(
+              children: [
+                Container(
+                  alignment: Alignment.centerRight,
+                  height: 770,
+                  width: 90,
+                  decoration: const BoxDecoration(
+                    color: Color(0xff212121),
+                  ),
+                  child: const Text(
+                    '⚡',style: TextStyle(
+                    fontSize: 64,
+                  ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
